@@ -20,7 +20,7 @@ struct Counter {
 
 entrypoint!(counter_contract);
 pub fn counter_contract(
-    program_id: &Pubkey, // Pub key of contract
+    _program_id: &Pubkey, // Pub key of contract
     accounts: &[AccountInfo], // Array of accounts we are interacting with
     instruction_data: &[u8] // 
 ) -> ProgramResult {
@@ -42,3 +42,6 @@ pub fn counter_contract(
     }
     Ok({})
 }
+
+// Program ID-->
+// 5zCoUANRHokBagRiqmfYytrKisTNtNtzV8cVSDxZqsnE
